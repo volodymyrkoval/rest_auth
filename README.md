@@ -3,6 +3,14 @@
 Протестовано на наступних конфігураціях:
 - Fedora 23, MongoDB 3.0.12, Node.js 6.4.0, Nginx 1.9.9
 - Linux Mint 18, MongoDB 2.6.10, Node.js 7.1.0, Nginx 1.10.0
+
+```
+git clone https://github.com/volodymyrkoval/rest_auth.git /var/www/authrest;
+cd /var/www/authrest;
+npm i;
+npm run-script start;
+ ```
+ 
 ```
 echo '127.0.0.1 auth.local.com client.local.com' >> /etc/hosts;
 ```
@@ -30,12 +38,6 @@ mongo
 >> use restAPIApp
 >> db.tokens.createIndex({"createdAt": 1},{expireAfterSeconds: 10*60})
 ```
-```
-git clone https://github.com/volodymyrkoval/rest_auth.git /var/www/authrest;
-cd /var/www/authrest;
-npm i;
-npm run-script start;
- ```
 
 Після цього веб-інтерфейс буде доступний в браузері:
 <a href="http://client.local.com">client.local.com</a>
