@@ -31,7 +31,7 @@ mongo
 >> db.tokens.createIndex({"createdAt": 1},{expireAfterSeconds: 10*60})
 ```
 ```
-git clone "" /var/www/authrest;
+git clone https://github.com/volodymyrkoval/rest_auth.git /var/www/authrest;
 cd /var/www/authrest;
 npm i;
 npm run-script start;
