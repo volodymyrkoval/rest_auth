@@ -42,7 +42,7 @@ class MainController {
   }
 
   /**
-   * curl -XPOST "127.0.0.1:4000/signup" --data "email=example@example.com&password=mypass&phone=0432123456"
+   * curl -XPOST "127.0.0.1:4000/signup" --data "id=example@example.com&password=mypass"
    * @param next
    */
   static async signUpAction(next) {
