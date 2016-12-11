@@ -7,7 +7,6 @@ function isValidEmail(email) {
 }
 
 function isValidPhone(phone) {
-  console.log(phone, /^\+\d+$/.test(phone));
   return /^\+\d+$/.test(phone)
 }
 
